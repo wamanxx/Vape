@@ -1,7 +1,8 @@
 *
 {
+    font-weight: bold;
     margin: 0%;
-    padding: 0;
+    padding: 0%;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
@@ -11,36 +12,13 @@
     font-weight: normal;
     src: local('Geomanist Regular Italic'), url('Geomanist-Regular-Italic.woff') format('woff');
     }
-.proof
-{
-    width: 19%;
-    background-color: black;
-    color: #ffffff;
-    padding: 2REM;
-}
-.argu
-{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-.gout
-{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding: 2rem;
-}
-h3{
-    text-align: center;
-    margin: 2rem;
-    font-size: 1.4rem;
-}
+
 h1{
+    position: relative;
     font-size: 4em;
     color: whitesmoke;
     background-color: hsl(0, 0%, 0%);
-    width: 100vw;
+    width: 100%;
     margin: 0;
     padding: 0;
     /* letter-spacing: 5rem; */
@@ -49,13 +27,15 @@ h1{
 }
 
 
- img
+img
  {
-    height:50vh;
-    aspect-ratio: 100%;
+    height:auto;
+    display: block;
+    margin: auto;
  }
- .navi {
-   
+ /* tout ce qui concerne nav */
+ .navi 
+ {
     margin: 10px; 
     background-color: rgb(201, 201, 201);
     color: hsl(0, 0%, 27%);
@@ -73,7 +53,7 @@ h1{
     color: hsl(0, 0%, 100%);
     letter-spacing: 5px;
     transition: ease-in-out;
-    transition-duration: 1000ms;
+    transition-duration: 500ms;
 }
  nav
  {
@@ -84,6 +64,36 @@ h1{
     flex-direction: column;
     align-items: center;
  }
+
+ /*  */
+
+ /* tout ce qui concerne les proofs */
+ .proof
+{
+    width: 19%;
+    min-height: auto;
+    background-color: black;
+    color: #ffffff;
+    padding: 2rem;
+    margin: 1rem;
+}
+.argu
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+h3{
+    text-align: center;
+    margin: 2rem;
+    font-size: 2rem;
+    background: linear-gradient(top to bottom whitesmoke);
+}
+h3.navi:hover{
+    text-align: center;
+    margin: 2rem;
+    font-size: 2rem;
+}
 
 div[class*=health]:hover
 {
@@ -119,5 +129,165 @@ div[class*=environnement]:hover
     transition: ease;
     transition-duration: 500ms;
 
+}
+
+/*  
+*/
+
+/* tout ce qui concerne les gouts */
+
+.gout div{
+    font-size: 2.5em;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+    padding: 1rem;
+}
+.gout{ 
+    display: grid;
+    grid-template-columns:  17%  17%  17%  17%;
+    grid-template-rows: 150px  150px  150px  150px;
+    column-gap: 1rem;
+    row-gap:1rem;
+    width: 100%;
+    justify-content: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+
+}
+.choisir
+{
+    grid-column-start: 4;
+    grid-row-start: 2;
+    grid-row-end: span 3;
+    
+}
+
+.ice
+{
+    background-color:hsl(204, 100%, 50%) ;
+    color:hsl(0, 0%, 100%) ;
+}
+
+.wejdene
+{
+    background-color:hsl(24, 100%, 18%) ;
+    color:hsl(0, 0%, 100%) ;
+}
+
+.apple
+{
+    background-color:hsl(113, 100%, 40%) ;
+    color:hsl(0, 0%, 100%) ;
+}
+
+.straw
+{
+    background-color:hsl(0, 100%, 40%) ;
+    color:hsl(103, 100%, 89%) ;
+}
+
+.rouge
+{
+    background-color:hsl(281, 100%, 34%) ;
+    color:hsl(0, 0%, 100%) ;
+}
+
+.coca
+{
+    background-color:hsl(0, 0%, 0%) ;
+    color:hsl(0, 100%, 87%) ;
+}
+
+.choco
+{
+    background-color:hsl(59, 100%, 79%) ;
+    color:hsl(0, 38%, 22%) ;
+}
+
+.cici
+{
+    background-color:hsl(64, 100%, 50%) ;
+    color:hsl(0, 0%, 0%) ;
+}
+
+.orange
+{
+    background-color:hsl(34, 100%, 50%) ;
+    color:hsl(0, 0%, 100%) ;
+}
+
+.crack
+{
+    background-color:hsl(0, 0%, 0%) ;
+    color:hsl(0, 0%, 100%) ;
+}
+.menth
+{
+    background-color:hsl(101, 100%, 27%) ;
+    color:hsl(0, 0%, 100%) ;
+}
+
+.mango
+{
+    background-color:hsl(46, 100%, 49%) ;
+    color:hsl(0, 0%, 100%) ;
+}
+
+.love
+{
+    background-color:hsl(337, 100%, 50%) ;
+    color:hsl(0, 0%, 100%) ;
+}
+
+.choisir
+{
+    border: black solid 5px;
+}
+
+
+/*  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer
+{
+    background-color: hsl(0, 0%, 20%);
+    color: whitesmoke;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer div:hover
+{
+    text-decoration: underline;
 }
 
