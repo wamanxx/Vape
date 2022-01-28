@@ -32,8 +32,18 @@ img
     height:auto;
     display: block;
     margin: auto;
+    margin-bottom: 4em;
+    margin-top: 4em;
  }
  /* tout ce qui concerne nav */
+.quest
+{
+
+    text-align: center;
+    margin: 4rem;
+    font-size: 2rem;
+}
+
  .navi 
  {
     margin: 10px; 
@@ -87,12 +97,7 @@ h3{
     text-align: center;
     margin: 2rem;
     font-size: 2rem;
-    background: linear-gradient(top to bottom whitesmoke);
-}
-h3.navi:hover{
-    text-align: center;
-    margin: 2rem;
-    font-size: 2rem;
+
 }
 
 div[class*=health]:hover
@@ -291,3 +296,30 @@ footer div:hover
     text-decoration: underline;
 }
 
+a{
+    display: block;
+    padding: 2rem;
+    text-decoration: none;
+    background-color: black;
+    color: whitesmoke;
+    height: auto ;
+    width: 10em;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 0 ;
+    margin-top: 0%;
+    font-size: 1.5rem;
+}
+
+a:hover
+{
+    width: 8em;
+    height: auto;
+    max-height: 8rem;
+    transition: ease;
+    transition-duration: 500ms;
+    color: black;
+    background: blanchedalmond;
+    box-shadow: rgba(0, 0, 0, 0.219) 0px 0px 8px;
+    border-radius: 10px;
+}
